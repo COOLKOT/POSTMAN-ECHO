@@ -25,8 +25,6 @@ def test_get_protocol():
     assert response.status_code == 200
     assert response.json()["headers"]["x-forwarded-proto"] == "https"
 
-
-
 test_file = "test_file.txt"
 
 @pytest.fixture
