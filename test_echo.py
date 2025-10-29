@@ -11,7 +11,7 @@ def test_post_data():
 def test_get_data():
     data_get = {"age": 25}
     response = requests.get("https://postman-echo.com/get", json=data_get)
-    assert response.status_code == 400
+    assert response.status_code == 200
     assert response.json()["args"]["age"] == 25
 
 def test_incorrect_get_data():
